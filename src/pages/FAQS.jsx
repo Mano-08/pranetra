@@ -2,21 +2,36 @@ import React from "react";
 import Footer from "../components/Footer";
 import data from "../data";
 import downArrow from "../images/icons/downArrow.svg";
+import header from "../images/pexels-alex-blokstra-1566584.jpg";
 
 function FAQS() {
-  function QuestionBlock(props) {
+  function handleClick(event) {
+    const parent = event.target.parentNode.parentNode;
+    console.log(parent);
+    parent.classList.toggle("activeQ");
+  }
+  function FAQ(props) {
     return (
-      <div className="faq" key={props.key}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-          }}
-        >
-          <div className="question">{props.ques}</div>
-          <img className="faqArrowscdd" src={downArrow} alt="arrow_down" />
+      <div className="faq">
+        <div className="question">
+          <h3
+            style={{
+              marginRight: "1vw",
+            }}
+          >
+            Q.{" "}
+          </h3>
+          <h3>{props.ques}</h3>
+          <img alt="" src={downArrow} onClick={handleClick} />
         </div>
         <div className="answer">
+          <p
+            style={{
+              marginRight: "1vw",
+            }}
+          >
+            A.{" "}
+          </p>
           <p>{props.ans}</p>
         </div>
       </div>
@@ -24,11 +39,18 @@ function FAQS() {
   }
   return (
     <>
-      {data.questions.map((ele, index) => {
-        return <QuestionBlock key={index} ques={ele.ques} ans={ele.ans} />;
-      })}
+      <section id="faqHeader">
+        <img src={header} alt="" />
+        <p>Frequently Asked Questions</p>
+      </section>
+      <div id="faqs">
+        {data.questions.map((element, index) => {
+          return <FAQ key={index} ques={element.ques} ans={element.ans} />;
+        })}
+      </div>
       <Footer />
     </>
   );
 }
+
 export default FAQS;

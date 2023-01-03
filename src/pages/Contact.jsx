@@ -22,10 +22,20 @@ function Contact() {
         <div id="phoneUs">
           <img src={phoneIcon} alt="phone" />
           <p style={{ fontSize: "2rem", color: "rgb(0, 142, 142)" }}>
-            {data.phoneNo1}
+            <a
+              style={{ textDecoration: "none", color: "black" }}
+              href={"tel:" + data.phoneNo1}
+            >
+              {data.phoneNo1}
+            </a>
           </p>
           <p style={{ fontSize: "2rem", color: "rgb(0, 142, 142)" }}>
-            {data.phoneNo2}
+            <a
+              style={{ textDecoration: "none", color: "black" }}
+              href={"tel:" + data.phoneNo2}
+            >
+              {data.phoneNo2}
+            </a>
           </p>
           <p id="contactText" style={{ textAlign: "left" }}>
             We're available 24/7 to help you with our service. Contact us

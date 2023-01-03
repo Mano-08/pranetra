@@ -21,4 +21,5 @@ function App() {
     </BrowserRouter>
   );
 }
+
 createRoot(document.getElementById("root")).render(<App />);

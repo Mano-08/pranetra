@@ -4,12 +4,12 @@ const data = {
   phoneNo2: "+91 456 456 4567",
   questions: [
     {
-      ques: "whyy",
+      ques: "w w w w w w w w w w w w w w ww w w w w w w  w w w w w w w w w w w ww w w w w w w w w w",
       ans: "idkk",
     },
     {
-      ques: "whyy2",
-      ans: "idkk",
+      ques: "whyya lk/rn efvln vfkjvnaiu vnfvmvkj nl egfb zergndrhvbz ddddd ddddddddd ddddhu",
+      ans: "whyya lk/rn efvln vfkjvnaiu vnfvmvkj nl egfb zergndrhvbz ddddd ddddddddd ddddhuwhyya lk/rn efvln vfkjvnaiu vnfvmvkj nl egfb zergndrhvbz ddddd ddddddddd ddddhuwhyya lk/rn efvln vfkjvnaiu vnfvmvkj nl egfb zergndrhvbz ddddd ddddddddd ddddhuk",
     },
     {
       ques: "whyy3",

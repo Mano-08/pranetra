@@ -72,8 +72,8 @@ function Gallery() {
 
       {images.map((element, index) => {
         return (
-          <div className={addClass(index)}>
-            <img key={index} alt="gallery_image" src={images[index]} />
+          <div key={index} className={addClass(index)}>
+            <img alt="gallery_image" src={images[index]} />
           </div>
         );
       })}

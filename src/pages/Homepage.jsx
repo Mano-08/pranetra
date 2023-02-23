@@ -3,6 +3,9 @@ import Gallery from "../components/Gallery";
 import blobUpper from "../images/wave.svg";
 import drone from "../images/drone.png";
 import blobLower from "../images/waveLower.svg";
+import circle1 from "../images/circle1.svg";
+import circle2 from "../images/circle2.svg";
+import circle3 from "../images/circle3.svg";
 
 function Homepage() {
   return (
@@ -16,6 +19,11 @@ function Homepage() {
             for induvidual crops and its health status.
           </p>
           <img alt="" id="droneHomePage" src={drone} />
+          <div id="circleInfo">
+            <img src={circle1} alt="" />
+            <img src={circle2} alt="" />
+            <img src={circle3} alt="" />
+          </div>
         </div>
         <img src={blobUpper} className="blobUpper" alt="" />
         <div id="blobMiddle"></div>

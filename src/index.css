@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Lato:wght@300&family=Open+Sans:wght@300&family=Patrick+Hand+SC&family=Poppins:wght@300&family=Roboto+Mono:wght@300&family=Roboto:wght@100&family=Square+Peg&family=Ubuntu:ital,wght@1,300&display=swap");
 
 * {
@@ -47,6 +51,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   font-size: 1.2rem;
+  background-color: #0000007c;
 }
 
 #logoNavBar {
@@ -67,7 +72,7 @@ nav {
   margin: 0 1vw;
   position: relative;
   text-decoration: none;
-  color: rgb(213, 213, 213);
+  color: rgb(244, 244, 244);
 }
 
 #navbar li {
@@ -169,6 +174,12 @@ nav {
 
 #footerSec4 img {
   height: 15px;
+  margin: auto 4px;
+}
+
+#footerSec4 a {
+  display: flex;
+  flex-direction: row;
 }
 
 /**************************************** HOME PAGE *************************************************/
@@ -275,7 +286,7 @@ nav {
 
 #contactPageHeader {
   position: relative;
-  height: 30vh;
+  height: 60vh;
   text-align: center;
   overflow: hidden;
 }
@@ -325,6 +336,16 @@ nav {
   }
 }
 
+#galleryDesign {
+  position: absolute;
+  height: 90vh;
+  left: -10vw;
+  width: 200vw;
+  background-repeat: no-repeat;
+  background-color: rgba(194, 164, 13, 0.296);
+  background-image: url(https://static.vecteezy.com/system/resources/previews/005/159/252/original/forest-nature-silhouette-landscape-spring-forest-pine-trees-summer-illustration-design-winter-tree-illustration-collection-for-christmas-free-vector.jpg);
+}
+
 #ContactMeBlock {
   position: relative;
   display: flex;
@@ -342,7 +363,7 @@ nav {
   filter: drop-shadow(0 0 0.7px rgb(12, 2, 2));
 }
 #phoneUs img {
-  margin: 10% 0;
+  margin: 10% auto;
   height: 15vh;
   width: 15vh;
 }
@@ -439,6 +460,8 @@ textarea {
   border-bottom: 1px solid black;
 }
 .question {
+  font-size: 1.2rem;
+  font-weight: 600;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -449,7 +472,7 @@ textarea {
   padding: 2vh 0;
   opacity: 0;
   height: 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -519,4 +542,40 @@ textarea {
   #contactPageHeader p {
     font-size: 3.5rem;
   }
+}
+
+#mainPage {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+
+#mainTitle {
+  margin-top: 20vh;
+  margin-left: 5vh;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+@keyframes slideUpDown {
+  0% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+#droneHomePage {
+  margin-left: 60%;
+  width: 30%;
+  height: auto;
+  animation: slideUpDown 4s infinite forwards;
+}
+#mainPara {
+  width: 40%;
+  font-size: 1.2rem;
+  margin-left: 5vh;
 }

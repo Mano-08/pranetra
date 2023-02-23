@@ -55,6 +55,7 @@ function Gallery() {
   return (
     <div className="sideHeading" id="gallery">
       <p id="galleryHeading">Gallery</p>
+      <div id="galleryDesign"></div>
       <img
         alt="Left Arrow"
         className="arrow"

@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../components/Footer";
 import data from "../data";
 import downArrow from "../images/icons/downArrow.svg";
-import header from "../images/pexels-alex-blokstra-1566584.jpg";
+import header from "../images/faqHeader.png";
 
 function FAQS() {
   function handleClick(event) {
@@ -14,14 +14,17 @@ function FAQS() {
     return (
       <div className="faq">
         <div className="question">
-          <h3
-            style={{
-              marginRight: "1vw",
-            }}
-          >
-            Q.{" "}
-          </h3>
-          <h3>{props.ques}</h3>
+          <span style={{ display: "flex", flexDirection: "row" }}>
+            <h3
+              style={{
+                marginRight: "1vw",
+              }}
+            >
+              Q.{" "}
+            </h3>
+            <h3>{props.ques}</h3>
+          </span>
+
           <img alt="" src={downArrow} onClick={handleClick} />
         </div>
         <div className="answer">

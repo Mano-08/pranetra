@@ -4,16 +4,23 @@ import { Outlet, Link } from "react-router-dom";
 
 function Navbar() {
   const [state, setState] = React.useState(false);
-  const [active, updateStatus] = React.useState("");
-  function handleClick() {
+  const [active, setActive] = React.useState(() => {
+    var loc = window.location.pathname;
+    if (loc === "/") {
+      return "aboutUs-link";
+    } else {
+      loc = loc.slice(1, loc.length);
+      return loc + "-link";
+    }
+  });
+
+  function handleClick(e) {
     state ? setState(false) : setState(true);
-  }
-  function setActive(event) {
-    updateStatus(event.target.parentNode.id);
+    setActive(e.target.parentNode.id);
   }
   return (
     <>
-      <nav style={{ backgroundColor: "#1b0a01ad" }}>
+      <nav>
         <a id="logoNavBar" href="https://www.amazon.com">
           <img alt="Pranetra_Logo" src={logo} />
         </a>
@@ -25,51 +32,28 @@ function Navbar() {
         </div>
         <ul id="navbar" className={state ? "#navbar active" : "#navbar"}>
           <li
-            className={active === "about-us" ? "navLink activePage" : "navLink"}
+            id="aboutUs-link"
+            className={active === "aboutUs-link" ? "activePage" : ""}
           >
-            <Link
-              className="link"
-              id="about-us"
-              onClick={(handleClick, setActive)}
-              to="/"
-            >
+            <Link className="link" onClick={handleClick} to="/">
               About Us
             </Link>
           </li>
 
           <li
-            className={active === "services" ? "navLink activePage" : "navLink"}
+            id="faqs-link"
+            className={active === "faqs-link" ? "activePage" : ""}
           >
-            <Link
-              className="link"
-              onClick={(handleClick, setActive)}
-              to="/services"
-              id="services"
-            >
-              Services
-            </Link>
-          </li>
-
-          <li className={active === "faqs" ? "navLink activePage" : "navLink"}>
-            <Link
-              className="link"
-              onClick={(handleClick, setActive)}
-              to="/faqs"
-              id="faqs"
-            >
+            <Link className="link" onClick={handleClick} to="/faqs">
               FAQS
             </Link>
           </li>
 
           <li
-            className={active === "contact" ? "navLink activePage" : "navLink"}
+            id="contact-link"
+            className={active === "contact-link" ? "activePage" : ""}
           >
-            <Link
-              className="link"
-              onClick={(handleClick, setActive)}
-              to="/contact"
-              id="contact"
-            >
+            <Link className="link" onClick={handleClick} to="/contact">
               Contact
             </Link>
           </li>

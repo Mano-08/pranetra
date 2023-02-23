@@ -4,20 +4,24 @@ const data = {
   phoneNo2: "+91 456 456 4567",
   questions: [
     {
-      ques: "w w w w w w w w w w w w w w ww w w w w w w  w w w w w w w w w w w ww w w w w w w w w w",
-      ans: "idkk",
+      ques: "What is the duration of flight?",
+      ans: "24 minutes",
     },
     {
-      ques: "whyya lk/rn efvln vfkjvnaiu vnfvmvkj nl egfb zergndrhvbz ddddd ddddddddd ddddhu",
-      ans: "whyya lk/rn efvln vfkjvnaiu vnfvmvkj nl egfb zergndrhvbz ddddd ddddddddd ddddhuwhyya lk/rn efvln vfkjvnaiu vnfvmvkj nl egfb zergndrhvbz ddddd ddddddddd ddddhuwhyya lk/rn efvln vfkjvnaiu vnfvmvkj nl egfb zergndrhvbz ddddd ddddddddd ddddhuk",
+      ques: "What is the capacity of the Fertilizer tank?",
+      ans: "6 litres.",
     },
     {
-      ques: "whyy3",
-      ans: "idkk",
+      ques: "When will I get service done if I book now?",
+      ans: "Within 2 working days the technicians will reach your farm for service.",
     },
     {
-      ques: "whyy4",
-      ans: "idkk",
+      ques: "Should I pay any advance money before the application of fertilizer?",
+      ans: "No, payment of service will be collected after fertilizer application is completed.",
+    },
+    {
+      ques: "smowmfrf",
+      ans: "aehcfbeffl",
     },
   ],
 };

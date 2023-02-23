@@ -106,7 +106,7 @@ function Footer() {
           </li>
           <li>
             <a href="https://www.facebook.com/">
-              <img alt="" src={facebook} /> FaceBook
+              <img alt="" src={facebook} /> Facebook
             </a>
           </li>
         </ul>

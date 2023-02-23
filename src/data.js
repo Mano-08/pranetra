@@ -1,7 +1,7 @@
 const data = {
-  email: "pranetra.research@gmail.com",
-  phoneNo1: "+91 123 123 1234",
-  phoneNo2: "+91 456 456 4567",
+  email: "421215@student.nitandhra.ac.in",
+  phoneNo1: "+91 872 690 00134",
+  phoneNo2: "+91 799 333 9641",
   questions: [
     {
       ques: "What is the duration of flight?",
@@ -18,10 +18,6 @@ const data = {
     {
       ques: "Should I pay any advance money before the application of fertilizer?",
       ans: "No, payment of service will be collected after fertilizer application is completed.",
-    },
-    {
-      ques: "smowmfrf",
-      ans: "aehcfbeffl",
     },
   ],
 };
